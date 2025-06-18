@@ -1,0 +1,28 @@
+<!-- public/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login - COSMOS</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="auth-page">
+  <div class="auth-box">
+    <h2>Welcome to COSMOS</h2>
+    <input type="text" id="username" placeholder="Username" required>
+    <input type="password" id="password" placeholder="Password" required>
+    <button onclick="login()">Login</button>
+    <p style="color: black;">or</p>
+    <button onclick="signup()">Sign Up</button>
+  </div>
+  <script>
+    function login() {
+      localStorage.setItem("user", document.getElementById("username").value);
+      window.location.href = "home.html";
+    }
+    function signup() {
+      alert("Signed up successfully!");
+    }
+  </script>
+</body>
+</html>

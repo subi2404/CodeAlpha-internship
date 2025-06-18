@@ -1,0 +1,35 @@
+<!-- public/home.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home - COSMOS</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="brand">COSMOS</div>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="cart.html">Cart</a>
+      <a href="profile.html">Profile</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Shop Products</h1>
+    <div class="filters">
+      <label>Filter by Category:</label>
+      <select id="categoryFilter" onchange="filterByCategory()">
+        <option value="All">All</option>
+        <option value="Electronics">Electronics</option>
+        <option value="Books">Books</option>
+        <option value="Clothing">Clothing</option>
+      </select>
+    </div>
+    <div class="products" id="product-list"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

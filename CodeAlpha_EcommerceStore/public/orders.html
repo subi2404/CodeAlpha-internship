@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Orders - COSMOS</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="brand"><img src="assets/logo.png" class="logo"> COSMOS</div>
+    <nav>
+      <a href="index.html">Shop</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="cart.html">Cart</a>
+      <a href="login.html" onclick="logout()">Logout</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Your Orders</h1>
+    <p>No orders placed yet.</p>
+  </main>
+
+  <script>
+    function logout() {
+      localStorage.removeItem("user");
+    }
+  </script>
+</body>
+</html>
