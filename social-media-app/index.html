@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FollowUp</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav>
+    <div class="container">
+      <h2 class="logo">FollowUp</h2>
+      <div class="search-bar">
+        <input type="text" placeholder="Search" />
+      </div>
+      <div class="create">
+        <label class="btn btn-primary">Create Post</label>
+      </div>
+    </div>
+  </nav>
+<br>
+      <div class="middle">
+        <div class="stories">
+          <div class="story">
+            <div class="profile-pic"><img src="https://i.pravatar.cc/100?img=1" /></div>
+            <p class="name">Anna</p>
+          </div>
+          <div class="story">
+            <div class="profile-pic"><img src="https://i.pravatar.cc/100?img=2" /></div>
+            <p class="name">Brian</p>
+          </div>
+          <div class="story">
+            <div class="profile-pic"><img src="https://i.pravatar.cc/100?img=3" /></div>
+            <p class="name">Cara</p>
+          </div>
+        </div>
+
+  <main>
+    <div class="container">
+      <div class="left">
+        <a class="profile">
+          <div class="profile-pic">
+            <img src="https://th.bing.com/th?q=Pixabay+Ai+Girl&w=120&h=120&c=1&rs=1&qlt=70&r=0&o=7&cb=1&dpr=1.3&pid=InlineBlock&rm=3&mkt=en-IN&cc=IN&setlang=en&adlt=moderate&t=1&mw=247 alt="User"/>
+          </div>
+          <div class="handle">
+            <h4>scarlett</h4>
+            <p class="text-muted">@scarlett</p>
+          </div>
+        </a>
+        <aside>
+          <ul>
+            <li>🏠 Home</li>
+            <li >💬 Messages   
+  <span class="badge">+1</span>
+            </li>
+            <li>🌍 Explore</li>
+            <li>🔔 Notifications</li>
+          </ul>
+        </aside>
+      </div>
+
+        <form class="create-post">
+          <div class="profile-pic">
+            <img src="https://th.bing.com/th?q=Pixabay+Ai+Girl&w=120&h=120&c=1&rs=1&qlt=70&r=0&o=7&cb=1&dpr=1.3&pid=InlineBlock&rm=3&mkt=en-IN&cc=IN&setlang=en&adlt=moderate&t=1&mw=247" />
+          </div>
+          <input type="text" placeholder="What's on your mind?" id="postInput" />
+          <input type="submit" value="Post" class="btn btn-primary" />
+        </form>
+
+        <div class="feeds" id="feedContainer">
+          <!-- JS-generated posts go here -->
+        </div>
+      </div>
+<div class="container">
+  <h2></h2>
+
+  <!-- Post Feed -->
+  <section class="post-feed">
+    <!-- Post 1 -->
+    <div class="post">
+      <div class="post-header">
+        <img src="https://th.bing.com/th/id/OIP.bEDAxUpUyD7mbUXBHMUpnAHaHa?w=187&h=187&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="User" />
+        <span>alex_01</span>
+      </div>
+      <img class="post-img" src="https://th.bing.com/th/id/OIP.joAPTxzNiPlJXtj1sjDeAQHaJQ?w=202&h=253&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Post Image" />
+     <div class="post-actions">
+  <div class="action">
+    <button class="like-btn" onclick="incrementLike(this)">❤️</button>
+    <span class="like-count">128</span>
+  </div>
+  <div class="action">
+    <button class="comment-btn">💬</button>
+  </div>
+  <div class="action">
+    <button class="share-btn">🔄</button>
+  </div>
+</div>
+
+    </div>
+
+    <!-- Post 2 -->
+    <div class="post">
+      <div class="post-header">
+        <img src="https://th.bing.com/th?q=Cara+Smith+Portland+Oregon&w=120&h=120&c=1&rs=1&qlt=70&r=0&o=7&cb=1&dpr=1.3&pid=InlineBlock&rm=3&mkt=en-IN&cc=IN&setlang=en&adlt=moderate&t=1&mw=247" alt="User" />
+        <span>carasmith</span>
+      </div>
+      <img class="post-img" src="https://th.bing.com/th/id/OIP.ai7C65VAPPS6h7bKV41NCwHaE7?w=252&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Post Image" />
+     <div class="post-actions">
+  <div class="action">
+    <button class="like-btn" onclick="incrementLike(this)">❤️</button>
+    <span class="like-count">128</span>
+  </div>
+  <div class="action">
+    <button class="comment-btn">💬</button>
+  </div>
+  <div class="action">
+    <button class="share-btn">🔄</button>
+  </div>
+</div>
+
+    </div>
+
+    <!-- Post 3 -->
+    <div class="post">
+      <div class="post-header">
+        <img src="https://th.bing.com/th/id/OIP.skKNIsL0aeiLRXN0HbVJaAHaHZ?w=196&h=194&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="User" />
+        <span>brian_lee</span>
+      </div>
+      <img class="post-img" src="https://th.bing.com/th/id/OIP.aVWmM_Afi8LiOaiIRxiqcAHaEi?w=262&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Post Image" />
+      <div class="post-actions">
+  <div class="action">
+    <button class="like-btn" onclick="incrementLike(this)">❤️</button>
+    <span class="like-count">128</span>
+  </div>
+  <div class="action">
+    <button class="comment-btn">💬</button>
+  </div>
+  <div class="action">
+    <button class="share-btn">🔄</button>
+  </div>
+</div>
+    </div>
+
+    <!-- Post 4 -->
+    <div class="post">
+      <div class="post-header">
+        <img src="https://th.bing.com/th/id/OIP.nZIvWTJriag4nnRcn--eagHaHY?w=187&h=186&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="User" />
+        <span>sarah_k</span>
+      </div>
+      <img class="post-img" src="https://th.bing.com/th/id/OIP.7g63zvzgOT6ywu-il07JOgHaE8?w=250&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Post Image" />
+      <div class="post-actions">
+  <div class="action">
+    <button class="like-btn" onclick="incrementLike(this)">❤️</button>
+    <span class="like-count">128</span>
+  </div>
+  <div class="action">
+    <button class="comment-btn">💬</button>
+  </div>
+  <div class="action">
+    <button class="share-btn">🔄</button>
+  </div>
+</div>
+    </div>
+
+    <!-- Post 5 -->
+    <div class="post">
+      <div class="post-header">
+        <img src="https://th.bing.com/th/id/OIP.ImLPVBTLA7T1sk4pGWD9kQHaKw?w=128&h=186&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="User" />
+        <span>kevin_w</span>
+      </div>
+      <img class="post-img" src="https://th.bing.com/th/id/OIP.tPqheCOU8QW7vDl0wMPwqQHaE8?w=292&h=195&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Post Image" />
+      <div class="post-actions">
+  <div class="action">
+    <button class="like-btn" onclick="incrementLike(this)">❤️</button>
+    <span class="like-count">128</span>
+  </div>
+  <div class="action">
+    <button class="comment-btn">💬</button>
+  </div>
+  <div class="action">
+    <button class="share-btn">🔄</button>
+  </div>
+</div>
+    </div>
+  </section>
+</div>
+
+      <div class="right">
+        <div class="messages">
+          <div class="heading">
+            <h4>Messages</h4>
+          </div>
+          <div class="search-bar">
+            <input type="text" placeholder="Search messages" />
+          </div>
+          <div class="message">
+            <div class="profile-pic">
+              <img src="https://i.pravatar.cc/100?img=4" />
+              <div class="active"></div>
+            </div>
+            <div class="message-body">
+              <h5>Jessica</h5>
+              <p class="text-muted">Hey! How’s it going?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Management Tool</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <aside class="sidebar">
+    <h2>Project Panel</h2>
+    <ul>
+      <li onclick="showSection('dashboard')">Dashboard</li>
+      <li onclick="showSection('projects')">Projects</li>
+      <li onclick="showSection('clients')">Clients</li>
+      <li onclick="logout()">Logout</li>
+    </ul>
+  </aside>
+
+  <main class="main-content">
+    <!-- DASHBOARD SECTION -->
+    <section id="dashboard-section" class="section">
+      <h1>E-commerce Website</h1>
+      <p class="description">Cosmos – A user-friendly e-commerce site...</p>
+
+      <section class="tags">
+        <span class="tag">Version Control</span>
+        <span class="tag">Development</span>
+        <span class="tag">Production</span>
+      </section>
+
+      <div class="task-panel">
+        <div class="task-column">
+          <h3>To Do</h3>
+          <div class="task">w.5 <br> Wireframes <span class="dot orange"></span></div>
+          <div class="task">w.1 <br> Home page <span class="dot blue"></span></div>
+        </div>
+
+        <div class="task-column">
+          <h3>Doing</h3>
+          <div class="task">w.2 <br> Create users model <span class="dot orange"></span></div>
+          <div class="task">w.2 <br> Setup gulp for project <span class="dot blue"></span></div>
+        </div>
+
+        <div class="task-column">
+          <h3>Done</h3>
+          <div class="task">w.1 <br> Setup github repo <span class="dot red"></span></div>
+        </div>
+      </div>
+      <br />
+      <button class="new-task-btn" onclick="toggleModal()">+ New Task</button>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects-section" class="section" style="display: none;">
+      <h2>My Projects</h2>
+      <div class="project-grid" id="projectGrid">
+        <!-- Project cards will be injected via JS -->
+      </div>
+    </section>
+
+    <!-- CLIENTS SECTION -->
+    <section id="clients-section" class="section" style="display: none;">
+      <h2>Client List</h2>
+      <div class="client-grid">
+        <div class="client-card">
+          <h3>Pixar Studios</h3>
+          <p>Project: Toy Story Website</p>
+          <button class="assign-btn">Assign Task</button>
+        </div>
+        <div class="client-card">
+          <h3>Freelancer John</h3>
+          <p>Project: Portfolio Builder</p>
+          <button class="assign-btn">Assign Task</button>
+        </div>
+        <div class="client-card">
+          <h3>Acme Inc.</h3>
+          <p>Project: Client CRM</p>
+          <button class="assign-btn">Assign Task</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- TASK MODAL -->
+    <div class="modal" id="taskModal">
+      <div class="modal-content">
+        <span class="close-btn" onclick="toggleModal()">×</span>
+        <h2>New Task</h2>
+        <label>Name:<input type="text" id="task-name" /></label>
+        <label>Weight:<input type="number" id="task-weight" /></label>
+        <label>Priority:
+          <select id="task-priority">
+            <option>low</option><option>medium</option><option>high</option>
+          </select>
+        </label>
+        <label>State:
+          <select id="task-state">
+            <option>to do</option><option>doing</option><option>done</option>
+          </select>
+        </label>
+        <label>Description:<textarea id="task-desc"></textarea></label>
+        <button class="save-btn">Save</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
